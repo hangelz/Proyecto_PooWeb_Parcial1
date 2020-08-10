@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{Menu}}</title>
+    {% load static %}
+    <!-- Bootstrap -->
+    <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+</head>
+
+<body class="bg-dark">
+    <div class="container text-center bg-light" style="color:dark; padding: 10% 5%; margin:10% 20%; position:absolute" >
+        <h1 >{{Menu}}</h1>
+        <ul><h3>
+            <l1><a href='/listarfactura'>{{ Factura }}</a></l1>
+            <l1><a href='/listarcliente'>{{ Cliente }}</a></l1>
+            <l1><a href='/listarproducto'>{{ Producto }}</a></l1>
+            <l1><a href='/admin'>Administracion</a></l1>
+        </h3></ul>
+    </div>
+</body>
+
+</html>
